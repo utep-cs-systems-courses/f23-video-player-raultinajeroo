@@ -2,7 +2,7 @@ from threading import *
 
 class videoQueue:
     # Class for queuing / dequing video frames using mutex lock
-    def __init__(self, frame_count = 32):
+    def __init__(self, frame_count):
         self.storage = []
         self.storageLock = Lock()
         self.full = Semaphore(0)

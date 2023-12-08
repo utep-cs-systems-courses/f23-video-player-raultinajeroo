@@ -49,8 +49,8 @@ def displayFrames(outVideo):
     cv2.destroyAllWindows()
 
 def videoPlayer():
-    inVideo = videoQueue.videoQueue()
-    outVideo = videoQueue.videoQueue()
+    inVideo = videoQueue.videoQueue(frame_count)
+    outVideo = videoQueue.videoQueue(frame_count)
 
     # Simultaneous thead start
     extract = Thread(target = extractFrames, args = (video_file, inVideo, frame_count))

@@ -4,7 +4,7 @@ from sys import argv
 
 switchesVarDefaults = (
     (('-v', '--video'), 'video', 'clip.mp4'),
-    (('-f', '--frames'), 'frames', '32'),
+    (('-f', '--frames'), 'frames', '2000'),
     (('-?', '--usage'), "usage", False),
 )
 
